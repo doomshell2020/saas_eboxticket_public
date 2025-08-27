@@ -884,10 +884,16 @@ footer .footer-policybox li a:hover {
 #sign-up .section-heading h2 {
   margin-top: 23px;
 }
-.sign-up .form-content {
+#sign-up .form-content {
   box-shadow: 0px 0px 14px 3px rgb(0 0 0 / 5%);
   padding: 25px;
   margin-top: 33px;
+}
+#sign-up .contact-form {background: #f9f9f9;padding: 20px;height: 100%;}#sign-up .contact-form h1 {font-size: 20px;margin-bottom: 21px;}#sign-up .signup-pageform{color: #000;}
+
+#sign-up .signup-pageform input.form-control {margin: 10px 0px;height: auto;text-transform: capitalize; font-size: 14px;color: #212529;} #sign-up .signup-pageform input.form-control:focus{border-color: #ededf5 !important; }
+#sign-up .signup-pageform label.col-sm-3.col-form-label {
+  padding-left: 20px;
 }
 /* sign up page end */
 /************************************ ajay css end *************************************/
