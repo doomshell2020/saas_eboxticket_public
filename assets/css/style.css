@@ -54,28 +54,21 @@ span {
 
 
 ul li{list-style: none;}
-.heading h1 {
+.section-heading h1 {
   font-size: 70px;
   color: #f2f2f2;
   text-align: center;
   font-weight: bold;
-  /* margin-bottom: -25px; */
+  margin-bottom: -25px;
 }
 /*  */
-.heading h2 {
+.section-heading h2 {
   font-size: 35px;
   font-weight: 700;
   color: #363636;
   text-align: center;
   margin-bottom: 25px;
 }
-
-.heading p {
-  text-align: center;
-}
-.body-text{font-size: 14px; color: rgba(0, 0, 0, 0.87);}
-.text-16{font-size: 16px;}
-.text-14{font-size: 14px;}
 /*  */
 p.des_h {
   margin-right: 0px;
@@ -149,7 +142,10 @@ p.des_h {
   color: #fff;
   border: none;font-weight: bold;text-transform: capitalize;
 }
-
+.body-text{font-size: 14px !important; color: rgba(0, 0, 0, 0.87) !important;}
+.text-16{font-size: 16px;}
+.text-14{font-size: 14px !important;}
+.button-linkcolor{color: #0d6efd;}
 .form-control {
   display: block;
   width: 100%;
@@ -468,8 +464,7 @@ header.headernav.scrolled {
 /* home slider section end */
 
 /* events section start*/
-#events {margin: 40px 0px 60px;}.section-heading h1{ font-size: 70px;color: #f2f2f2;text-align: center;font-weight: bold;margin-bottom: -25px;} .section-heading h2{font-size: 35px;font-weight: 700;color: #363636;text-align: center;
-margin-bottom: 25px;}#events .search-container {margin: 0px 16px 20px;position: relative;}#events .search-container form{display: flex;}#events .search-container svg {position: absolute;right: 19px;top: 12px;}
+#events {margin: 40px 0px 60px;}#events .search-container {margin: 0px 16px 20px;position: relative;}#events .search-container form{display: flex;}#events .search-container svg {position: absolute;right: 19px;top: 12px;}
 #events .month {
   background: #f5f5f5;
   position: sticky;
@@ -612,7 +607,10 @@ margin-left: 8px;
 }
 /* scan section home page end */
 /* manage audience home page start */
-#manage_Audience {padding: 60px 0px 60px;} #manage_Audience.bg_color1{background: linear-gradient(0deg, rgb(255 255 255) 0%, #e9f4fe 100%);} #manage_Audience img.audi_img {width: 330px;}#manage_Audience .section-heading h2 {font-size: 27px;}img.arrow-img {width: 16px;margin-right: 7px;margin-top: 1px;}#manage_Audience .section-heading .facilities p {font-size: 13px;margin-bottom: 10px;}#manage_Audience .section-heading p{text-align: justify; font-size: 16px;color: #000;}
+#manage_Audience {padding: 60px 0px 60px;} #manage_Audience.bg_color1{background: linear-gradient(0deg, rgb(255 255 255) 0%, #e9f4fe 100%);} #manage_Audience img.audi_img {width: 330px;}#manage_Audience .section-heading h2,
+#calculator .section-heading h2 {
+  font-size: 27px;
+}img.arrow-img {width: 16px;margin-right: 7px;margin-top: 1px;}#manage_Audience .section-heading .facilities p {font-size: 13px;margin-bottom: 10px;}#manage_Audience .section-heading p{text-align: justify; font-size: 16px;color: #000;}
 #manage_Audience .down_icon img {
   width: 120px;
 }
@@ -895,7 +893,110 @@ footer .footer-policybox li a:hover {
 #sign-up .signup-pageform label.col-sm-3.col-form-label {
   padding-left: 20px;
 }
+#sign-up .chack_cont span a,
+#sign-up .for_pass,
+#sign-up .reg_btn a {
+  color: #407bff;
+  font-weight: 500;
+}
+#sign-up .reg_btn p{color: #000;}
 /* sign up page end */
+
+/* demo request page start */
+section#request-demo {background-color: #eee;}
+#request-demo .meattingpgLeft {
+  background-color: #426bb334;
+  padding: 22px;
+}
+#request-demo .meattingpgLeft h1 {
+  font-size: 32px;
+  color: rgba(0, 0, 0, .87);
+}
+
+#request-demo .timingsMeetingUl li {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  line-height: 26px;color: rgba(0, 0, 0, .87);
+}
+#request-demo .timingsMeetingUl li i {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  z-index: 9;
+  color: #426bb3;
+}
+#request-demo .meattingpgRgt {
+  padding: 30px;
+}
+#request-demo.activeMeatingDateDv .mettingTimingsDv {
+  display: block;
+}
+#request-demo .mettingTimingsDv {
+  width: calc(35%);
+  /* display: none; */
+}
+#request-demo .mettingTimingsDv ul {
+  row-gap: 12px;
+  height: 465px;
+  overflow-y: scroll;
+  padding-right: 6px;
+}
+#request-demo .mettingTimingsDv ul li a {
+  display: block;
+  padding: 15px 15px;
+  border: 1px solid #426bb3;
+  color: #426bb3;
+  transition: .5s;width: 100%;
+}
+#request-demo .mettingTimingsDv ul li .nextbtnMeating {
+  display: none;
+}
+#request-demo .mettingTimingsDv ul li a:hover {
+  background-color: #426bb3;
+  color: #fff;
+}
+#request-demo .mettingTimingsDv ul li.meatingBtnsActive {
+  display: flex;
+  gap: 15px;
+}
+#request-demo .mettingTimingsDv ul li.meatingBtnsActive a.meatingTimeBtn {
+  width: 50%;
+  background-color: rgb(0 0 0 / 60%);
+  border-color: rgb(0 0 0 / 60%);
+  padding: 15px 5px;
+  color: #fff;
+}
+#request-demo .mettingTimingsDv ul li.meatingBtnsActive .nextbtnMeating {
+  display: block;
+  width: 50%;
+  background-color: #426bb3;
+  color: #fff;
+  border: 1px solid #426bb3;
+}
+.meatingForm h3 {
+  font-size: 1.28rem;
+  color: rgba(0, 0, 0, .87);
+}
+.meatingForm .form-control, .meatingForm .form-floating > label {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  padding: 10px 12px;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+.meatingForm select.form-select {
+  height: 3.2rem;
+  border-radius: 2px;
+}
+.calender-box {
+  margin-right: 30px;
+  width: 65%;
+}
+.meatingForm .button-linkcolor{text-decoration: underline;}
+.meatingForm .button-linkcolor:hover{text-decoration: none; color: #066adc;}
+.meatingForm .btn-primary{background-color: #0d6efd; border-color: #0d6efd;}.meatingForm .btn-primary:hover{background-color: #0b5ed7 !important;}
+/* demo request page end */
 /************************************ ajay css end *************************************/
 
 /* website css start from here */
