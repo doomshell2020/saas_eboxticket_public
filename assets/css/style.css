@@ -1329,6 +1329,9 @@ li.menu_line {
 #ticket-detailpage a.subtn.primery-button {background-color: #3d6db5;}
 
 /* ticket detail page end */
+/* my profile page start */
+.profil_deaile{width: 90%;}#profile .profil_deaile .user-avatar img {width: 80%;}.profil_deaile h5 {color: #000;}
+/* my profile page start */
 /************************************ ajay css end *************************************/
 
 /* website css start from here */
