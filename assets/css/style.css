@@ -1330,7 +1330,7 @@ li.menu_line {
 
 /* ticket detail page end */
 /* my profile page start */
-.profil_deaile{width: 90%;}#profile .profil_deaile .user-avatar img {width: 80%;}.profil_deaile h5 {color: #000;}
+.profil_deaile{width: 90%;}#profile .profil_deaile .user-avatar img {width: 80%;}.profil_deaile h5 {color: #000;}#profile .profil_deaile .primery-button{background-color: #3d6db5;}#profile .profil_deaile .primery-button:hover{color: #fff;}#profile .profil_deaile .profile-details{box-shadow: 0px 0px 14px 3px rgb(0 0 0 / 5%);}#profile .profil_deaile .profile-details table tr td{ padding: 0.5rem 0.5rem;color: #000;border-bottom-width: 1px;}#profile .profil_deaile button.btn.verified_btn i {color: #00ad1d;font-size: 20px;}#profile .profil_deaile table button.verified_btn{line-height: 0;}
 /* my profile page start */
 /************************************ ajay css end *************************************/
 
